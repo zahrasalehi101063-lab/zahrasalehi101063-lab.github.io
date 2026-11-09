@@ -1,27 +1,26 @@
-# Human Potential Studio — Personal Website Starter
+# H+ Human Potential Studio — Website Package v3
 
-A bilingual Persian/English static portfolio website for presenting AI, learning, creativity and business projects.
+Bilingual Persian/English static website for the H+ studio, its applied-AI experiments, the SilvaGlow beauty store, and the author's published work.
 
-## Included
-- `index.html` — page content and metadata
-- `styles.css` — responsive visual design
-- `script.js` — Persian/English language switch and mobile menu
+## Files
+- `index.html` — all page content and metadata
+- `styles.css` — responsive design
+- `script.js` — language switch, saved language preference, mobile navigation
 - `favicon.svg` — site icon
+- `robots.txt` — crawler guidance
 
-## Preview locally
-Open `index.html` in a modern web browser. No build step or package installation is needed.
+## Publish / update on GitHub Pages
+1. Extract this ZIP on your computer.
+2. Open the repository `zahrasalehi101063-lab.github.io`.
+3. Choose **Add file → Upload files**.
+4. Upload the six files from this folder to the repository root, replacing the existing files when GitHub prompts you.
+5. Commit the update. GitHub Pages will redeploy from `main` / root.
 
-## Publish with GitHub Pages
-1. Create a **public** repository named exactly `zahrasalehi101063-lab.github.io`.
-2. Upload all files from this folder to the repository root (not the folder itself).
-3. In the repository, open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select branch **main** and folder **/(root)**, then save.
-6. After the deployment finishes, visit `https://zahrasalehi101063-lab.github.io/`.
+## Content accuracy notes
+- SilvaGlow is linked as the official shop for current products, prices, availability and checkout. Specific featured products have not been added because their exact product names, images, prices and URLs have not yet been verified.
+- The books section is prepared for the printed book. Its real title, cover, description, chapter information and purchase link will be added after the owner provides and approves the book details. The full PDF is not intended to be published publicly by default.
+- AI product cards are accurately labelled as concepts or designs, not launched services.
+- This is a static portfolio site. It does not yet contain AI API calls, user accounts, checkout or a backend.
 
-## Before publishing
-- Review the profile wording and project descriptions.
-- Add a public contact email only if you want it displayed.
-- Project cards are intentionally marked as in design/concept, not as launched products.
-
-This is a static portfolio website. It does not contain the Skill2Market AI backend, AI API calls, user accounts or database. Those will be developed separately and securely.
+## Before publishing the next update
+Review the content, and add only verified product and book information. Keep API keys and private customer information out of this public repository.
