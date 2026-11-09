@@ -1,26 +1,18 @@
-# H+ Human Potential Studio — Website Package v3
+# H+ Human Potential Studio — Website v5
 
-Bilingual Persian/English static website for the H+ studio, its applied-AI experiments, the SilvaGlow beauty store, and the author's published work.
+Bilingual Persian/English static website for H+ with the Creative Compass, idea frontier, Opportunity Architect form, books/publications placeholder and SilvaGlow commerce section.
 
-## Files
-- `index.html` — all page content and metadata
-- `styles.css` — responsive design
-- `script.js` — language switch, saved language preference, mobile navigation
-- `favicon.svg` — site icon
-- `robots.txt` — crawler guidance
+## v5 changes
+- Adds an optional assets/access field to the Opportunity Architect brief.
+- Adds a live AI execution panel that remains disabled until a secure backend URL is configured.
+- Adds `agent-config.js`; only the public API endpoint URL belongs here. Never place an API key or private access code in browser JavaScript.
+- Preserves the local prompt-copy/download mode as a fallback.
 
-## Publish / update on GitHub Pages
-1. Extract this ZIP on your computer.
-2. Open the repository `zahrasalehi101063-lab.github.io`.
-3. Choose **Add file → Upload files**.
-4. Upload the six files from this folder to the repository root, replacing the existing files when GitHub prompts you.
-5. Commit the update. GitHub Pages will redeploy from `main` / root.
+## Static GitHub Pages
+Upload these seven files to the repository root:
+`index.html`, `styles.css`, `script.js`, `agent-config.js`, `favicon.svg`, `robots.txt`, `README.md`.
 
-## Content accuracy notes
-- SilvaGlow is linked as the official shop for current products, prices, availability and checkout. Specific featured products have not been added because their exact product names, images, prices and URLs have not yet been verified.
-- The books section is prepared for the printed book. Its real title, cover, description, chapter information and purchase link will be added after the owner provides and approves the book details. The full PDF is not intended to be published publicly by default.
-- AI product cards are accurately labelled as concepts or designs, not launched services.
-- This is a static portfolio site. It does not yet contain AI API calls, user accounts, checkout or a backend.
+## Live AI mode
+The separate `HPLUS_live_agent_starter` package contains a Vercel serverless endpoint. Deploy it first, configure server-side environment variables, then set `agentApiUrl` in `agent-config.js` to the deployed endpoint. Until this is done, the live mode stays disabled and the prompt builder continues to work locally.
 
-## Before publishing the next update
-Review the content, and add only verified product and book information. Keep API keys and private customer information out of this public repository.
+The OpenAI API is billed separately from a ChatGPT subscription. Use a private beta first. The included shared beta code and in-memory rate limit are preliminary safeguards, not production-grade authentication or rate limiting.
